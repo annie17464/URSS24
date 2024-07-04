@@ -1,5 +1,4 @@
 # Python3 program for stable marriage problem
-
 # Number of Men or Women
 N = 4
 # This function returns true if 
@@ -93,5 +92,9 @@ def stableMarriage(prefer):
 		print(i + N, "\t", wPartner[i])
 
 # Driver Code
-prefer = input("Please input user preferences in the form of an array:")
+prefer = [[7, 5, 6, 4], [5, 4, 6, 7],
+		[4, 5, 6, 7], [4, 5, 6, 7],
+		[0, 1, 2, 3], [0, 1, 2, 3],
+		[0, 1, 2, 3], [0, 1, 2, 3]]
+
 stableMarriage(prefer)
