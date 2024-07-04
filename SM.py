@@ -4,7 +4,6 @@
 N = 4
 # This function returns true if 
 # woman 'w' prefers man 'm1' over man 'm'
-# helloooo
 def wPrefersM1OverM(prefer, w, m, m1):
 	
 	# Check if w prefers m over her 
