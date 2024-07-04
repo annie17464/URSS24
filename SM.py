@@ -93,9 +93,5 @@ def stableMarriage(prefer):
 		print(i + N, "\t", wPartner[i])
 
 # Driver Code
-prefer = [[7, 5, 6, 4], [5, 4, 6, 7],
-		[4, 5, 6, 7], [4, 5, 6, 7],
-		[0, 1, 2, 3], [0, 1, 2, 3],
-		[0, 1, 2, 3], [0, 1, 2, 3]]
-
+prefer = input("Please input user preferences in the form of an array:")
 stableMarriage(prefer)
