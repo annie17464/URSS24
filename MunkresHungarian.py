@@ -8,6 +8,7 @@ def suitability_inputs(N):
         row = list(map(int, candidate.split()))
         matrix.append(row)
     print(matrix)
+    # we allow edits to inputs:
 
     edit= input("Please enter Y to confirm input matrix, else enter N: ")
     if edit== "N":
@@ -18,15 +19,15 @@ def suitability_inputs(N):
     return matrix
 
 # execution: 
-
-# N gives us the dimension of our matrix, we can pull this into the input as well
-# our inputs therefore are:
 N = int(input("Please enter the number of candidates or positions taken into consideration: "))
 matrix = suitability_inputs(N) 
-'''
+''' 
+# This is the driver matrix as presented in the manual of munkres
+# I have added user inputs but commented it for reference 
 matrix = [[5, 9, 1],
           [10, 3, 2],
-          [8, 7, 4]] '''
+          [8, 7, 4]] 
+'''
 m = Munkres()
 indexes = m.compute(matrix)
 print_matrix(matrix, msg='Suitability matrix: ')
