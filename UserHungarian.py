@@ -203,6 +203,17 @@ def suitability_inputs(N):
         candidate = input(f"Please enter the suitability of candidate {i + 1} for each task (separated with spaces!): ")
         row = list(map(int, candidate.split()))
         matrix.append(row)
+    print(matrix)
+    
+# if someone has mistyped a row, we can allow edits. 
+# Note that this function is currently only allowing one row to be edited, but this can be extended if required 
+    edit= input("Please enter Y to confirm input matrix, else enter N: ")
+    if edit== "N":
+        change_index= int(input("Which row number would you like to edit? "))
+        input_row= input("Please enter your new row: ")
+        change_row= list(map(int, input_row.split()))
+        matrix[change_index -1]=  change_row
+        
     return matrix
 
 # execution: 
