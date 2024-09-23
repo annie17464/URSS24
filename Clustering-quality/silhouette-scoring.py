@@ -1,3 +1,6 @@
+# This file is for the analysis of the quality of clustering given different types and number of questions 
+# We consider yes and no questions, integer type questions and slider questions (continuous rating scale)
+
 from k_means_constrained import KMeansConstrained
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
