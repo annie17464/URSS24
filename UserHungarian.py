@@ -74,7 +74,8 @@ def iterative_crossing_out(matrix):
 
         if max_row_zeros == 0 and max_col_zeros ==0:
             break
-        
+        # This is in case the number of zeroes of the rows and columns are the same. 
+        # To determine which line to use, we count the number of rows and columns with max zeroes and compare
         if max_row_zeros == max_col_zeros:
             row_count = row0count_array.count(max_row_zeros)
             col_count = col0count_array.count(max_col_zeros)
