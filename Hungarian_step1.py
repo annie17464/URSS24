@@ -6,6 +6,10 @@ from munkres import Munkres, print_matrix
 # Extract the preferences
 df = pd.read_csv('flatpref.csv')
 
+def output(df, allocations, output_file):
+    df['Allocated Flat'] = allocations
+    df.to_csv(output_file, index=False)
+
 def flat_capacities(N):
     capacities = []
     for i in range(N):  # Assuming there are N accommodation blocks
@@ -35,14 +39,16 @@ m = Munkres() # This is the Munkres package for the hungarian algorithm
 cost_matrix = preferences
 indexes = m.compute(cost_matrix)
 headers= list(res.columns)
-solution = [headers[col] for row, col in indexes]
+allocations = [headers[col] for row, col in indexes]
 
-# Add the solution as a new column in the DataFrame
-df['Preliminary Accommodation'] = solution
+# Add the allocations as a new column in the DataFrame
+df['Preliminary Accommodation'] = allocations
 
 # Print results
 print("Updated DataFrame with Preliminary Accommodation:")
 print(df)
+output_file = 'preliminary_accommodations.csv'
+output(df, allocations, output_file)
 
 # Check how many people got their first preferences, second preferences and so on using the hungarian algorithm
 counts = np.zeros(6).astype(int)
