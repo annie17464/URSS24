@@ -1,9 +1,7 @@
-# Matching and Clustering Algorithms
+# Application of Clustering Methods to the Student Experience of Accommodation.
 2023/24 Undergraduate Research Support Scheme  - The University of Warwick
 
-## Title
-Application of Clustering Methods to the Student Experience of Accommodation.
-Creating a dashboard that allocates a set of students to suitable accommodation from preference data using matching algorithms and clustering methods in the following order: 
+This repository allocates a set of students to suitable accommodation from preference data using matching algorithms and clustering methods in the following order: 
 
 1. Block Allocation: allocate students to a 'preliminary accommodation' based on their ranking of accommodations using different matching and probabilistic algorithms for comparison. 
 
@@ -18,9 +16,9 @@ The repository content is organized in the following directories:
 
 - `Variance-demo/`: directory hosts code and toy data to analyse incorporating variance into a flat by filtering students by an attribute. 
 
-- `Clustering-Visualisation/`: hosts toy data based on two attributes (2-dimensional) and code clustering this (using k-means) into 'flats' and plotting to provide visual intuition.  
+- `Clustering-Visualisation/`: hosts toy data based on two different questionnaires and code clustering this data (using k-means) into 'flats' and plots these to provide visual intuition.  
 
-- `Clustering-quality/`: hosts toy data having different types and number of questions, and code clustering it (using k-means) and reporting quality of clustering using silhoutte scoring for analysis. 
+- `Clustering-quality/`: hosts toy data having different types and number of questions, and code clustering it (using k-means), and reports quality of clustering using silhoutte scoring for analysis. 
 
 ## Loose Files
 
@@ -50,6 +48,7 @@ Step 2:
 
 
 ## Requirements
+
 Python 3.11
 
 All libraries and packages from 'requirements.txt' file
@@ -80,6 +79,7 @@ It is recommended to create a virtual environment in which to install the above 
 
 
 ## Contributors
+
 Main contributor: Ananya Garg 
 
 Supervisor: Dr Martyn Parker
