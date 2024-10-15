@@ -1,3 +1,5 @@
+# this file contains the solution for the first step of the problem, the block allocation, through the hungarian algorithm. 
+
 import pandas as pd 
 from itertools import chain
 import numpy as np

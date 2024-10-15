@@ -1,3 +1,5 @@
+# This file plots the clusters formed when k-means-constrained is applied to data based on the 2-dimensional slider type (1 to 5) questionnaire. 
+
 from k_means_constrained import KMeansConstrained
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

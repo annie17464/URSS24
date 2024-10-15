@@ -1,3 +1,4 @@
+# This file contains a maximum-matching algorithm for graphs. 
 # we will use networkx to solve our problem 
 import networkx as nx
 

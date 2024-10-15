@@ -1,3 +1,5 @@
+# this file contains the solution for the first step of the problem, the block allocation, through the weighted b matching algorithm. 
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 import numpy as np

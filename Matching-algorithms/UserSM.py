@@ -1,3 +1,5 @@
+# This file contains the python code for the stable matching algorithm 
+
 def wPrefersM1OverM(prefer, w, m, m1, N):
     # Check if w prefers m over her current engagement m1
     for i in range(N):
@@ -92,3 +94,5 @@ def user_preferences(N):
 N = int(input("Please enter the number of Men or Women taken into Consideration: "))
 # We ask for the user's preferences! 
 user_preferences(N)
+
+# This code has been taken from https://www.geeksforgeeks.org/stable-marriage-problem/ and modified to take user preferences as input

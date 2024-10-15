@@ -1,3 +1,5 @@
+# this file contains the code for the weighted b-matching algorithm. 
+
 from pulp import LpMaximize, LpMinimize, LpProblem, LpVariable, lpSum, PULP_CBC_CMD, LpStatus
 import numpy as np
 

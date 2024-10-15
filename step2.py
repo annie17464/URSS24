@@ -1,3 +1,5 @@
+# this file contains the solution for the second step of the problem, the flat clustering, through k means constrained. 
+
 from k_means_constrained import KMeansConstrained
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

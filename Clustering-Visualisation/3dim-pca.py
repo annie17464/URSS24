@@ -1,3 +1,6 @@
+# This file plots the clusters formed when k-means-constrained is applied to data based on the 3-dimensional yes/no questionnaire. 
+# We first cluster the data and then apply principal component analysis to reduce our dimension to 2 in order to plot data for visualization. 
+
 from k_means_constrained import KMeansConstrained
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

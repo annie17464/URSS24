@@ -1,3 +1,7 @@
+# This file contains a small incorporation of favourable variance in flats by dividing students into subgroups based on a feature
+#(here, we have chosen football teams under the assumption "two football fans of the same team together make for a noisy/undesirable flat")
+# these subgroups are taken up one by one and allocated houses based on their preferences for each house 
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
